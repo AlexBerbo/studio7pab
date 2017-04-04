@@ -13,17 +13,18 @@ body {
 	background-size: cover;
 	height: 100%;
 	width: 100%;
-	margin: 0px;
+	margin: 0;
 }
 
 .zavesa {
 	height: 700px;
 	width: 100%;
+	margin: 0;
 	display: flex;
 	justify-content: center;
 	text-align: center;
 	flex-direction: column;
-    background: linear-gradient(to bottom, rgba(5,55,64,1) 0%, rgba(5,55,64,0.6) 100%);
+        background: linear-gradient(to bottom, rgba(5,55,64,1) 0%, rgba(5,55,64,0.6) 100%);
 }
 
 .zavesa a {
@@ -52,7 +53,7 @@ body {
 	/*position: fixed;*/
 	float: right;
 	width: 100%;
-	margin: 0;
+	height: 40px;
 }
 
 nav ul {
@@ -260,7 +261,7 @@ nav ul li {
     color: rgba(255,255,255,0.9);
 	background: linear-gradient(to bottom, rgba(32,166,187,1) 0%, rgba(37,186,208,1) 50%);
 	width: 100%;
-	max-height: 850px;
+	max-height: 1920px;
 }
 
 .text-about {
@@ -296,7 +297,7 @@ nav ul li {
 	display: flex;
 	justify-content: center;
 	flex-direction: row;
-	max-height: 555px;
+	max-height: 1920px;
 }
 
 .slika-about {
@@ -304,7 +305,7 @@ nav ul li {
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 555px;
-	height: 370px;
+	max-height: 1920px;
 	margin-top: 100px;
 	margin-right: 2%;
 }
@@ -429,7 +430,7 @@ nav ul li {
 }
 
 .a-zavesa-1 {
-	margin-top: -30px;
+	margin: auto auto;
 	color: white;
  	display: flex;
  	justify-content: center;
@@ -450,7 +451,7 @@ small {
 }
 
 .a-zavesa-1:hover {
-	margin-top: -30px;
+	margin: auto auto;
  	display: flex;
  	justify-content: center;
  	flex-direction: column;
@@ -1068,7 +1069,341 @@ small {
 /*footer*/
 
 /*responsive*/
-@media (max-width: 768px) {
+@media (min-width: 703px) and (max-width: 1280px) {
+	nav ul li {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 15px;
+		text-align: left;
+	}
+
+	nav {
+		margin-bottom: 300px;
+	}
+
+	.slika {
+		height: auto;
+		width: 100%;
+	}
+
+	.h1-zavesa {
+		font-size: 35px;
+		padding-bottom: 10px;
+	}
+
+	.p-zavesa {
+		font-size: 18px;
+	} 
+
+	.zavesa a {
+		text-align: center;
+		font-size: 15px;
+		width: 9%
+	}
+
+	.servisi {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.h2-servisi {
+		font-size: 35px;
+	}
+
+	.p-servisi {
+		font-size: 18px;
+	}
+
+	.h4-servisi {
+		font-size: 32px;
+	}
+
+	.p-servisi-1 {
+		font-size: 18px;
+	}
+
+	.icons-servisi {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		max-width: 100%;
+	}
+
+	.about {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.h2-about {
+		font-size: 35px;
+	}
+
+	.p-about-1 {
+		font-size: 18px;
+	}
+
+	.p-about {
+		font-size: 18px;
+	}
+
+	.slika-about {
+		max-width: 90%;
+		height: 300px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.div-about {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.our-portfolio {
+		height: auto;
+		max-width: 100%;
+	}
+
+	.h2-portfolio {
+		font-size: 35px;
+	}
+
+	.p-portfolio {
+		font-size: 18px;
+	}
+
+	.div-portfolio-dugmad {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		width: 30%;
+	}
+	
+	.a-portfolio {
+		background: transparent;
+    	border: 2px solid #25BAD0;
+    	color: #25BAD0;
+    	padding: 10px 15px;
+   	 	text-decoration: none;
+   	 	text-transform: uppercase;
+   	 	margin-left: 2%;
+    	font-size: 15px;
+    	margin-bottom: 10px;
+	}
+
+	.portfolio {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		max-width: 100%;
+	}
+
+	.slika-1 {
+		width: 40%;
+	}
+
+	.slika-1:hover {
+		width: 40%
+	}
+
+	.zavesa-1 {
+		width: 100%;
+	}
+
+	.zavesa-1:hover {
+		width: 100%;
+	}
+
+	.a-zavesa-1 {
+		width: 100%;
+	}
+
+	.a-zavesa-1:hover {
+		width: 100%;
+	}
+
+	.slika-2 {
+		width: 40%;
+		margin-bottom: 25px;
+	}
+
+	.slika-2:hover {
+		width: 40%
+	}
+
+	.zavesa-2 {
+		width: 100%;
+	}
+
+	.zavesa-2:hover {
+		width: 100%;
+	}
+
+	.slika-3 {
+		width: 40%;
+		margin-bottom: 25px;
+	}
+
+	.slika-3:hover {
+		width: 40%
+	}
+
+	.zavesa-3 {
+		width: 100%;
+	}
+
+	.zavesa-3:hover {
+		width: 100%;
+	}
+
+	.slika-4 {
+		width: 40%;
+		margin-bottom: 25px;
+	}
+
+	.slika-4:hover {
+		width: 40%
+	}
+
+	.zavesa-4 {
+		width: 100%;
+	}
+
+	.zavesa-4:hover {
+		width: 100%;
+	}
+
+	.slika-5 {
+		width: 40%;
+		margin-bottom: 25px;
+	}
+
+	.slika-5:hover {
+		width: 40%
+	}
+
+	.zavesa-5 {
+		width: 100%;
+	}
+
+	.zavesa-5:hover {
+		width: 100%;
+	}
+
+	.slika-6 {
+		width: 40%;
+		margin-bottom: 25px;
+	}
+
+	.slika-6:hover {
+		width: 40%
+	}
+
+	.zavesa-6 {
+		width: 100%;
+	}
+
+	.zavesa-6:hover {
+		width: 100%;
+	}
+
+	.slika-7 {
+		width: 40%;
+		margin-bottom: 25px;
+	}
+
+	.slika-7:hover {
+		width: 40%
+	}
+
+	.zavesa-7 {
+		width: 100%;	
+	}
+
+	.zavesa-7:hover {
+		width: 100%;
+	}
+
+
+	.slika-8 {
+		width: 40%;
+	}
+
+	.slika-8:hover {
+		width: 40%
+	}
+
+	.zavesa-8 {
+		width: 100%;
+	}
+
+	.zavesa-8:hover {
+		width: 100%;
+	}
+
+	.form-contact {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.h2-contact {
+		font-size: 35px;
+	}
+
+	.p-contact {
+		font-size: 18px;
+	}
+
+	.form {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-self: center;
+	}
+
+	.forma-1 {
+		margin-bottom: 5px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+
+	.forma-2 {
+		margin-top: 5px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+
+	.form-2 {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-self: center;
+	}
+
+	.forma-3 {
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+
+	.a-contact {
+		text-align: center;
+		font-size: 12px;
+		width: 9%
+	}
+
+	.foot p {
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 703px) {
 	
 	nav ul li {
 		box-sizing: border-box;
@@ -1147,8 +1482,10 @@ small {
 	}
 
 	.slika-about {
-		max-width: 100%;
-		height: auto;
+		max-width: 90%;
+		height: 300px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	
 	.div-about {
