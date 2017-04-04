@@ -52,6 +52,7 @@ body {
 	/*position: fixed;*/
 	float: right;
 	width: 100%;
+	margin: 0;
 }
 
 nav ul {
